@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="text.js" defer></script>
+</head>
+<body>
+
+    <script>
+        /*
+            'load' vs 'DOMContentLoad' 차이점
+            - DOMContentLoad 는 HTMl이 다 완료가 되면 그때 호출됨
+            - load 는 리소스(페이지 안에 쓰인 폰트나 이미지, CSS)들이 다운로드가 완료되면 그떄 호출한다.
+        */
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('DOMContentLoad');
+        });
+        /*
+        1. Browser가 서버로 부터 HTML를 다운받는다
+        2. 처음부터 HTMl page를 읽어서 DOM 요소로 변환한다.
+        3. script 부분을 만나면 window에 EventListener를 등록하게 되고
+        4. window에서 페이지에 필요한 모든 리소스가 로딩이 완료가 되면
+        5. 콜백함수 출력
+        */
+        window.addEventListener('load', () => {
+            console.log('load');
+        });
+        // 사용자가 페이지를 나가기전에 불fu지는 beforeunload, 
+        // before unload
+        window.addEventListener('beforeunload', () => {
+            console.log('beforeunload');
+        });
+        // 사용자가 페이지를 나갔을때 불러지는 unload
+        // resource is being unloaded
+        window.addEventListener('unload', () => {
+            console.log('unload');
+        });
+    </script>
+</body>
+</html>
