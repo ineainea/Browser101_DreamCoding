@@ -1,0 +1,126 @@
+:root {
+  /*Color*/
+  --color-white: #f2eeeb;
+  --color-black: #0d0d0d;
+  --color-light-gray: rgb(207, 207, 207);
+  --color-dark-red: #8c1f07;
+  --color-pink: #f26052;
+  --color-light-pink: #f2786d;
+
+  /*font weight*/
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-white);
+  margin: 0;
+  cursor: default;
+}
+
+section {
+  width: 480px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  border: 1px solid var(--color-black);
+}
+
+.title__name {
+  font-size: 3rem;
+  font-weight: var(--weight-bold);
+}
+#head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.head__name {
+  line-height: 51px;
+  font-weight: var(--weight-semi-bold);
+  margin-left: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#head i {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+#input-button {
+  height: 2.3rem;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 17px;
+  font-weight: var(--weight-semi-bold);
+}
+
+.input::placeholder {
+  color: var(--color-light-gray);
+}
+
+.button {
+  /* Just a little styling to make it pretty */
+  color: var(--color-black);
+  position: relative;
+  width: 4.5rem;
+  height: 2rem;
+  left: 12rem;
+  top: -2.3rem;
+  padding: 0;
+  background-color: white;
+  font-size: 17px;
+  font-weight: var(--weight-bold);
+  border: 0;
+  color: var(--color-light-gray);
+}
+
+#items {
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-left: 0;
+}
+
+li p {
+  display: list-item;
+  margin: 5px 0;
+}
+
+li del {
+  display: list-item;
+  margin: 5px 0;
+}
+
+ul li .item__icon {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.fa-check {
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.fa-trash-alt {
+  cursor: pointer;
+}
