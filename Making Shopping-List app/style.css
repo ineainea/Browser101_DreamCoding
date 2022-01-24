@@ -17,30 +17,34 @@ body {
   background-color: var(--color-white);
   margin: 0;
   cursor: default;
+  width: 480px;
+  margin: 0 auto;
+  border: 5px solid var(--color-black);
+  border-radius: 30px;
 }
 
 section {
-  width: 480px;
   display: block;
   text-align: center;
   margin: auto;
-  border: 1px solid var(--color-black);
 }
 
 .title__name {
   font-size: 3rem;
   font-weight: var(--weight-bold);
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
 }
 #head {
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
+  margin: 1rem 3.3rem;
 }
 
 .head__name {
   line-height: 51px;
   font-weight: var(--weight-semi-bold);
-  margin-left: 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -48,16 +52,21 @@ section {
 #head i {
   display: flex;
   align-items: center;
-  margin-right: 0.5rem;
+}
+
+.input__container {
+  text-align: center;
 }
 
 #input-button {
-  height: 2.3rem;
+  height: 3rem;
 }
 
 .input {
   position: relative;
-  width: 100%;
+  display: block;
+  margin: 0.2rem auto;
+  width: 26rem;
   border: 1px solid #ccc;
   border-radius: 0.4rem;
   padding: 10px 100px 10px 20px;
@@ -77,8 +86,8 @@ section {
   color: var(--color-black);
   position: relative;
   width: 4.5rem;
-  height: 2rem;
-  left: 12rem;
+  height: 1.7rem;
+  left: 10rem;
   top: -2.3rem;
   padding: 0;
   background-color: white;
@@ -87,10 +96,19 @@ section {
   border: 0;
   color: var(--color-light-gray);
 }
+#mainList {
+  margin: 0 auto;
+  width: 26rem;
+  background-color: var(--color-light-pink);
+  border-radius: 10px;
+}
 
 #items {
-  padding: 0 2rem;
+  padding: 0 auto;
   font-size: 1rem;
+  margin-right: 1.6rem;
+  color: var(--color-white);
+  font-weight: var(--weight-regular);
 }
 
 li {
@@ -98,6 +116,7 @@ li {
   justify-content: space-between;
   flex-direction: row-reverse;
   padding-left: 0;
+  margin: 0.2rem 0;
 }
 
 li p {
