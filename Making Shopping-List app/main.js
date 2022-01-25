@@ -18,7 +18,12 @@ function onClick() {
 
     item.classList.add('item');
     p.classList.add('item__text');
-    p.innerText = input.value;
+    let text = p.innerText;
+    text = input.value;
+    if(text === '') {
+        input.focus();
+        return;
+    }
     input.value = '';
 
     item.append(p);
