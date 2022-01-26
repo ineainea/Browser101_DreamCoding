@@ -18,14 +18,17 @@ function onClick() {
 
     item.classList.add('item');
     p.classList.add('item__text');
-    let text = p.innerText;
-    text = input.value;
+    let text = input.value;
     if(text === '') {
         input.focus();
         return;
     }
+    p.innerHTML = text;
+    console.log(`p: ${p}`)
+    console.log(`p.innerHtml: ${p.innerHTML}`);
+    console.log(`text: ${text}`);
     input.value = '';
-
+    
     item.append(p);
     items.appendChild(item);
 
@@ -73,4 +76,8 @@ function deleteClick() {
 }
 
 
-
+// Enter 키 눌렀을 때 등록하기
+input.addEventListener('keypress', () => {
+    console.log('enter!');
+    onClick();
+});
