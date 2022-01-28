@@ -51,15 +51,26 @@ function checkClick() {
     // 도움주신 Browser101 학생분들, 웹코딩 단톡방 분들 너무너무 감사합니다❗❗❗
     //const del = document.createElement('del');
 
-    for(let i = 0; i < item.length; i++) {
-        checks[i].addEventListener('click', (e) => {
-            const del = document.createElement('del');
-            let pText = item[i].childNodes[1].textContent; // p 태그의 text 값 저장
-            item[i].childNodes[1].textContent = ''; // p 태그의 text 삭제
-            item[i].childNodes[1].append(del); // 위에서 만든 del tag를 p tag에 append
-            item[i].childNodes[1].childNodes[0].textContent = pText; // del에 pText 값을 저장
-        });
-    }
+    //for(let i = 0; i < item.length; i++) {
+    //    checks[i].addEventListener('click', (e) => {
+    //        const del = document.createElement('del');
+    //        let pText = item[i].childNodes[1].textContent; // p 태그의 text 값 저장
+    //        item[i].childNodes[1].textContent = ''; // p 태그의 text 삭제
+    //        item[i].childNodes[1].append(del); // 위에서 만든 del tag를 p tag에 append
+    //        item[i].childNodes[1].childNodes[0].textContent = pText; // del에 pText 값을 저장
+    //    });
+    //}
+    items.addEventListener('click', event => {
+        console.log(event.target.classList.value);
+        if(event.target.classList.value == 'fa-check') {
+            console.log('ok!');
+            // const del = document.createElement('del');
+            // const item_icon = event.target.parentElement;
+            // const item_text = item_icon.nextElementSibling;
+            // console.log(`item_text: ${item_text}`);
+            // console.log(item_text.innerHTML);
+        }
+    });
 }
 
 // 휴지통 이미지를 클릭했을 때 list가 삭제됨
@@ -79,5 +90,9 @@ function deleteClick() {
 // Enter 키 눌렀을 때 등록하기
 input.addEventListener('keypress', () => {
     console.log('enter!');
-    onClick();
+    if (window.event.keyCode == 13) {
+        onClick();
+    }
 });
+
+
