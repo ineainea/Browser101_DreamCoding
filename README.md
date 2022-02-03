@@ -3,7 +3,7 @@ Dream Coding Academy의 수업인 Browser101를 통해 만든 프로젝트입니
 
 
 ## 1st Project: Shopping-List🛒
-***
+
 [이미지]
 ### 주요 기능🛠
 
@@ -17,7 +17,7 @@ Dream Coding Academy의 수업인 Browser101를 통해 만든 프로젝트입니
 * '체크' 아이콘을 클릭할 시, 해당 item의 Text에 취소선이 생깁니다.
 
 ## 2st Project: Carrot-Game🥕
-***
+
 [이미지]
 ### 주요 기능🛠
 
