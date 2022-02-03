@@ -7,13 +7,13 @@ Dream Coding Academy의 수업인 Browser101를 통해 만든 프로젝트입니
 
 ### 주요 기능🛠
 
-[이미지]
+![ShoppingList_Add](https://user-images.githubusercontent.com/58885393/152399679-832a17cb-78b7-433b-8840-f48366793f1e.gif)
 * List에 item을 추가합니다.
 
-[이미지]
+![ShoppingList_delete](https://user-images.githubusercontent.com/58885393/152399701-5479b28c-d51e-4072-8087-da402e2eefa4.gif)
 * '쓰레기통' 아이콘을 클릭할 시, 해당 item이 List에서 삭제됩니다.
 
-[이미지]
+![ShoppingList_취소선](https://user-images.githubusercontent.com/58885393/152399709-aea4b715-7ca9-492d-813e-6c4d90c03873.gif)
 * '체크' 아이콘을 클릭할 시, 해당 item의 Text에 취소선이 생깁니다.
 
 ## 2st Project: Carrot-Game🥕
