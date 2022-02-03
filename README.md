@@ -1,11 +1,18 @@
 # Browser101_DreamCoding
 Dream Coding Academy의 수업인 Browser101를 통해 만든 프로젝트입니다.
 
+## 개발 환경🌎
+* Visual Studio Code
+
+## 개발 기술🛠
+* Vanilla JS
+* HTMl5
+* CSS3
 
 ## 1st Project: Shopping-List🛒
 ![Shopping-List2](https://user-images.githubusercontent.com/58885393/152399537-955506ab-3b5f-4f74-a851-e0dd9ff8de0a.jpg)
 
-### 주요 기능🛠
+### 주요 기능✨
 
 ![ShoppingList_Add](https://user-images.githubusercontent.com/58885393/152399679-832a17cb-78b7-433b-8840-f48366793f1e.gif)
 * List에 item을 추가합니다.
