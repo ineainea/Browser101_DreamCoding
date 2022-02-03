@@ -1,0 +1,141 @@
+body {
+  background-color: black;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#main .main__background {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.ui__container {
+  position: relative;
+  width: 200px;
+  bottom: 670px;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ui__container i {
+  color: black;
+  background-color: blanchedalmond;
+  font-size: 40px;
+}
+
+.button__container {
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.start__button,
+.pause__button {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: blanchedalmond;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+
+.start__button.hide {
+  display: none;
+}
+
+.pause__button.visible {
+  display: block;
+}
+
+.start__button .fas,
+.pause__button .fas {
+  padding: 20px 0;
+}
+
+.pause__button {
+  display: none;
+  position: relative;
+}
+
+.timer__container {
+  background-color: white;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  border: 5px solid black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.count__container {
+  background-color: pink;
+  font-size: 40px;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.list__container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  bottom: 554px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.ant__list img,
+.carrot__list img {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.ant__list img:hover,
+.carrot__list img:hover {
+  transform: scale(1.2);
+}
+
+.result__container {
+  position: relative;
+  display: block;
+  background-color: chocolate;
+  bottom: 860px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.result__container button {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 0 auto;
+  font-size: 40px;
+  transform: scaleX(-1);
+  border: 5px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.result__text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.result__container.hide {
+  display: none;
+}

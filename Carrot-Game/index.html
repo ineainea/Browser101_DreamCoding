@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/409f405c7a.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <title>Carrot-Game</title>
+</head>
+<body>
+    <div id="main">
+        <!--Backgound Image-->
+        <img class="main__background" src="/img/background.png" alt="background">
+        <!--UI-->
+        <div class="ui__container">
+            <!--Start & Pause Button-->
+            <div class="button__container">
+                <!--Start Button-->
+                <div class="start__button">
+                    <i class="fas fa-play"></i>
+                </div>
+                <!--Pause Button-->
+                <div class="pause__button">
+                    <i class="fas fa-square"></i>
+                </div>
+            </div>
+            <!--Timer-->
+            <div class="timer__container">
+                <span class="timer__number">0:0</span>
+            </div>
+            <!--Count-->
+            <div class="count__container">
+                <span class="count__number">0</span>
+            </div>
+        </div>
+        <!--Ant && Carrot List-->
+        <div class="list__container">
+            <!--Ant list-->
+            <div class="ant__list"></div>
+            <!--Carrot list-->
+            <div class="carrot__list"></div>
+        </div>
+        <!--Win & Over Alert-->
+        <form class="result__container">
+            <button class="restart__button">
+                <i class="fas fa-undo"></i>
+            </button>
+            <div class="result__text"></div>
+        </form>
+    </div>
+</body>
+</html>
