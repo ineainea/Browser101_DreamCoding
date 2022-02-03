@@ -4,7 +4,7 @@ Dream Coding Academy의 수업인 Browser101를 통해 만든 프로젝트입니
 
 ## 1st Project: Shopping-List🛒
 
-[이미지]
+/asset/image/Shopping-List2.jpg
 ### 주요 기능🛠
 
 [이미지]
