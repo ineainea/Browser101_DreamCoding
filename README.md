@@ -3,8 +3,8 @@ Dream Coding Academy의 수업인 Browser101를 통해 만든 프로젝트입니
 
 
 ## 1st Project: Shopping-List🛒
+![Shopping-List2](https://user-images.githubusercontent.com/58885393/152399537-955506ab-3b5f-4f74-a851-e0dd9ff8de0a.jpg)
 
-/asset/image/Shopping-List2.jpg
 ### 주요 기능🛠
 
 [이미지]
